@@ -75,7 +75,8 @@ def submit_fn():
         "qap_size": get_default(qap_size, "-1"),
         "feedback": get_default(feedback, "No feedback provided"),
         "ledger": edited_df.to_json(),
-        "submit_time": ts
+        "submit_time": ts,
+        "language": "English"
     }
     with tempfile.TemporaryDirectory() as tmpdirname:
         fp = f"{tmpdirname}/survey.json"
