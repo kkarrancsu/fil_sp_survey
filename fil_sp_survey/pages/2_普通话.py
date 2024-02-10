@@ -26,11 +26,11 @@ def slack(channel, msg, files=None):
 
 # Load your dataframe (you can replace this with your own data)
 l3_df = pd.DataFrame({
-    "Revenues": ["Deal Income ($16/TiB/Yr)", "Block Rewards ($8/TiB/Yr)", None, None, None, None, None, None],
-    "Protocol Costs": ["Gas ($2/TiB/Yr)", "Sealing ($2/TiB/Yr)", None, None, None, None, None, None],
-    "Operational Costs": ["Power ($8/TiB/Yr)", "Bandwidth ($6/TiB/Yr)", "Staff ($8/TiB/Yr)", "Data Prep ($1/TiB/Yr)", None, None, None, None],
-    "Financing Costs": ["Pledge Rev Share ($4/TiB/Yr)", None, None, None, None, None, None, None],
-    "Additional Costs": ["Biz Dev ($8/TiB/Yr)", "Extra Copies ($2/TiB/Yr)", "Extra BW ($2/TiB/Yr)", None, None, None, None, None]
+    "收入": ["交易收入 ($16/TiB/Yr)", "区块奖励 ($8/TiB/Yr)", None, None, None, None, None, None],
+    "协议费用": ["气 ($2/TiB/Yr)", "密封 ($2/TiB/Yr)", None, None, None, None, None, None],
+    "运营成本": ["权力 ($8/TiB/Yr)", "带宽 ($6/TiB/Yr)", "员工 ($8/TiB/Yr)", "数据准备 ($1/TiB/Yr)", None, None, None, None],
+    "融资成本": ["质押收益分成 ($4/TiB/Yr)", None, None, None, None, None, None, None],
+    "额外费用": ["业务发展 ($8/TiB/Yr)", "额外副本 ($2/TiB/Yr)", "额外带宽 ($2/TiB/Yr)", None, None, None, None, None]
 })
 
 # Display the editable dataframe
@@ -49,7 +49,7 @@ st.markdown("""
 列指定的类别的特定成本或收入来源。默认条目以美元/TiB/年为单位显示如下，可以通过双击进行编辑
 在细胞上。 \n\n 随意使用最适合您的单位。请为每个条目提供描述，
 与默认条目类似。例如：而不是输入值 \$16/TiB/Yr, 最好进入
-"Deal Income (\$16/TiB/Yr)", 等等。默认文本说明和类别作为指南提供。
+"交易收入 (\$16/TiB/Yr)", 等等。默认文本说明和类别作为指南提供。
 \n\n
 如果您决定提供汇总成本和收入，请注明，并附上如下说明： Total($24/TiB/Yr). \n\n
  \n\n
