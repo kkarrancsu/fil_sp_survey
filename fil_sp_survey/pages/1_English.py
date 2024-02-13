@@ -29,6 +29,7 @@ l3_df = pd.DataFrame({
     "Revenues": ["Deal Income ($16/TiB/Yr)", "Block Rewards ($8/TiB/Yr)", None, None, None, None, None, None],
     "Protocol Costs": ["Gas ($2/TiB/Yr)", "Sealing ($2/TiB/Yr)", None, None, None, None, None, None],
     "Operational Costs": ["Power ($8/TiB/Yr)", "Bandwidth ($6/TiB/Yr)", "Staff ($8/TiB/Yr)", "Data Prep ($1/TiB/Yr)", None, None, None, None],
+    "Capital Expenditures": ["Storage Hardware ($6/TiB/Yr)", None, None, None, None, None, None, None], 
     "Financing Costs": ["Pledge Rev Share ($4/TiB/Yr)", None, None, None, None, None, None, None],
     "Additional Costs": ["Biz Dev ($8/TiB/Yr)", "Extra Copies ($2/TiB/Yr)", "Extra BW ($2/TiB/Yr)", None, None, None, None, None]
 })
@@ -51,6 +52,14 @@ on the cell. \n\n Feel free to use units that are easiest for you. Please aim to
 similar to the default entries. For example: Rather than entering a value of \$16/TiB/Yr, it is preferable to enter 
 "Deal Income (\$16/TiB/Yr)", and so on. The default text descriptions and categories are provided as a guide.
 \n\n
+For revenues and costs that can be denominated in either FIL or fiat currency (eg. Block Reward Revenues or Gas Fees), please specfiy whether amounts are 
+denominated in fiat or FIL. If using an assumed FIL/USD exchange rate that is also fine, but please provide the price assumption. You can also specify a USD price you 
+have locked in, as well as the cost of that hedge. For example, Block Reward Revenues can be reported in the following manners: \n\n
+
+Option 1: Block Rewards ($8/TiB/Yr) with an assumed FIL/USD exchange rate of 1FIL/5USD \n\n
+Option 2: Block Rewards (1FIL/TiB/Yr) \n\n
+Option 3: Block Rewards ($8/TiB/Yr) with a locked in FIL/USD exchange rate of 1FIL/5USD and a hedging cost of $X/TiB/Yr \n\n
+
 If you decide to provide aggregated costs and revenues, please indicate so with a description such as: Total($24/TiB/Yr). \n\n
  \n\n
 """)
