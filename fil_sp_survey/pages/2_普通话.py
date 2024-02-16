@@ -27,8 +27,8 @@ def slack(channel, msg, files=None):
 # Load your dataframe (you can replace this with your own data)
 l3_df = pd.DataFrame({
     "收入": ["交易收入 ($16/TiB/Yr)", "区块奖励 ($8/TiB/Yr)", None, None, None, None, None, None],
-    "协议费用": ["气 ($2/TiB/Yr)", "密封 ($2/TiB/Yr)", None, None, None, None, None, None],
-    "运营成本": ["权力 ($8/TiB/Yr)", "带宽 ($6/TiB/Yr)", "员工 ($8/TiB/Yr)", "数据准备 ($1/TiB/Yr)", None, None, None, None],
+    "协议费用": ["燃油费 ($2/TiB/Yr)", "封装 ($2/TiB/Yr)", None, None, None, None, None, None],
+    "运营成本": ["算力 ($8/TiB/Yr)", "带宽 ($6/TiB/Yr)", "员工 ($8/TiB/Yr)", "数据准备 ($1/TiB/Yr)", None, None, None, None],
     "融资成本": ["质押收益分成 ($4/TiB/Yr)", None, None, None, None, None, None, None],
     "额外费用": ["业务发展 ($8/TiB/Yr)", "额外副本 ($2/TiB/Yr)", "额外带宽 ($2/TiB/Yr)", None, None, None, None, None]
 })
@@ -57,7 +57,7 @@ st.markdown("""
 edited_df = st.data_editor(l3_df, use_container_width=True)
 
 st.markdown("<h4 style='color: blue;'>基本信息</h4>", unsafe_allow_html=True)
-location = st.text_input("地理位置", placeholder="Quito, Ecuador", key="location")
+location = st.text_input("地理位置", placeholder="节点所在城市，国家", key="location")
 rbp_size = st.text_input("RBP (PiB)", placeholder="10", key="rbp")
 qap_size = st.text_input("QAP (PiB)", placeholder="50", key="qap")
 feedback = st.text_area("反馈", placeholder="请在此处提供任何反馈或其他信息。", key="feedback")
