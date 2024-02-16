@@ -58,7 +58,7 @@ have locked in, as well as the cost of that hedge. For example, Block Reward Rev
 
 Option 1: Block Rewards ($8/TiB/Yr) with an assumed FIL/USD exchange rate of 1FIL/5USD \n\n
 Option 2: Block Rewards (1FIL/TiB/Yr) \n\n
-Option 3: Block Rewards ($8/TiB/Yr) with a locked in FIL/USD exchange rate of 1FIL/5USD and a hedging cost of $X/TiB/Yr \n\n
+Option 3: Block Rewards (\$8/TiB/Yr) with a locked in FIL/USD exchange rate of 1FIL/5USD and a hedging cost of $X/TiB/Yr \n\n
 
 If you decide to provide aggregated costs and revenues, please indicate so with a description such as: Total($24/TiB/Yr). \n\n
  \n\n
