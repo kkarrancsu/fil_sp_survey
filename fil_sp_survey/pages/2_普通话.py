@@ -36,7 +36,6 @@ l3_df = pd.DataFrame({
 
 # Display the editable dataframe
 st.title("Filecoin存储提供商调查")
-e
 st.write("以下是一项匿名调查，旨在帮助了解存储提供商的成本和收入。" + \
          "将对回复进行总结，以提供对存储提供程序微观经济学的见解。" + \
          "请尽可能详细地提供您的最佳估算。" + \
