@@ -29,13 +29,14 @@ l3_df = pd.DataFrame({
     "收入": ["交易收入 ($16/TiB/Yr)", "区块奖励 ($8/TiB/Yr)", None, None, None, None, None, None],
     "协议费用": ["燃油费 ($2/TiB/Yr)", "封装 ($2/TiB/Yr)", None, None, None, None, None, None],
     "运营成本": ["算力 ($8/TiB/Yr)", "带宽 ($6/TiB/Yr)", "员工 ($8/TiB/Yr)", "数据准备 ($1/TiB/Yr)", None, None, None, None],
+    "资本性支出": ["存储硬件花费 （USD $6.0 每TiB/每年）", None, None, None, None, None, None, None],
     "融资成本": ["质押收益分成 ($4/TiB/Yr)", None, None, None, None, None, None, None],
     "额外费用": ["业务发展 ($8/TiB/Yr)", "额外副本 ($2/TiB/Yr)", "额外带宽 ($2/TiB/Yr)", None, None, None, None, None]
 })
 
 # Display the editable dataframe
 st.title("Filecoin存储提供商调查")
-
+e
 st.write("以下是一项匿名调查，旨在帮助了解存储提供商的成本和收入。" + \
          "将对回复进行总结，以提供对存储提供程序微观经济学的见解。" + \
          "请尽可能详细地提供您的最佳估算。" + \
@@ -51,6 +52,14 @@ st.markdown("""
 与默认条目类似。例如：而不是输入值 \$16/TiB/Yr, 最好进入
 "交易收入 (\$16/TiB/Yr)", 等等。默认文本说明和类别作为指南提供。
 \n\n
+
+对于可以用FIL或法定货币计价的收入和成本（例如区块奖励收入或燃油费），请指明金额是以法定货币还是以FIL计价。如果使用假设的FIL的美元币价也可以，但请提供币价的假设 （比如USD $5.0 一个FIL）。您也可以指定您锁定的美元价格，以及对冲成本。
+
+例如，区块奖励收入可以用三种方式报告：\n\n
+方法1：区块奖励（USD $6.0 每TiB/每年，按假设USD $5.0 一个⨎FIL币价算) \n\n
+方法2：区块奖励（FIL ⨎1.0 每TiB/每年）\n\n
+方法3：区块奖励（USD $8.0 每TiB/每年，锁定USD $5.0 一个⨎FIL币价，对冲成本为USD $x.00 每TiB/每年) \n\n
+
 如果您决定提供汇总成本和收入，请注明，并附上如下说明： Total($24/TiB/Yr). \n\n
  \n\n
 """)
